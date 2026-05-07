@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "f26c27ce-212d-48bf-b162-84f8ad3a422a",
+		"name": "Patent API Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16786457",
+		"_collection_link": "https://restless-station-787120.postman.co/workspace/Nandita~d164d006-66ba-4106-9f71-32d42bfc608f/collection/16786457-f26c27ce-212d-48bf-b162-84f8ad3a422a?action=share&source=collection_link&creator=16786457"
+	},
+	"item": [
+		{
+			"name": "Summary API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query By Assignee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/query?assignee=Microsoft",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"query"
+					],
+					"query": [
+						{
+							"key": "assignee",
+							"value": "Microsoft"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query By Patent Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/query?patent_type=A1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"query"
+					],
+					"query": [
+						{
+							"key": "patent_type",
+							"value": "A1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query By Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/query?year=2025",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"query"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2025"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

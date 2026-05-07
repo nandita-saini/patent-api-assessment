@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+
+  app:
+    build: .
+    container_name: patent_app
+
+    ports:
+      - "8765:8765"
+
+    volumes:
+      - ./:/var/www/html
+
+    depends_on:
+      - db
+
+    command: bash -c "bin/cake server -H 0.0.0.0 -p 8765"
+
+  db:
+    image: postgres:15
+
+    container_name: patent_db
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: patents
+
+    ports:
+      - "5432:5432"
