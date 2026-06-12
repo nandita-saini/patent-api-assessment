@@ -1,4 +1,4 @@
-# Patent API Assessment
+# Patent API
 
 A backend REST API built using CakePHP 5 and PostgreSQL for importing, analyzing, and querying patent data related to Artificial Intelligence patents.
 
